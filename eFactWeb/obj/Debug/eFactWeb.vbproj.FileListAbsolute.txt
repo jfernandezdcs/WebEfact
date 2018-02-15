@@ -1,0 +1,13 @@
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\eFactWeb.dll.config
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\eFactWeb.dll
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\eFactWeb.pdb
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\eFactWeb.xml
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.vbprojResolveAssemblyReference.cache
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.Resources.resources
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.vbproj.GenerateResource.Cache
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.vbproj.CoreCompileInputs.cache
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.dll
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.xml
+C:\Users\DIEGO-PC\source\repos\eFactWeb\eFactWeb\obj\Debug\eFactWeb.pdb

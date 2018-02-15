@@ -1,0 +1,236 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="master.master.vb" Inherits="eFactWeb.master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>eFact</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href="/libEstilos/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/libEstilos/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/libEstilos/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="/libEstilos/css/style.css" rel="stylesheet" />
+    <link href="/libEstilos/css/main-style.css" rel="stylesheet" />
+    <!-- Page-Level CSS -->
+    <link href="/libEstilos/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+  
+</head>
+<body> 
+    <!--  wrapper -->
+    <div id="wrapper">
+        <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/menu.aspx">
+                    <img src="/libEstilos/img/logo.png" alt="" />
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- navbar-top-links -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- main dropdown -->
+    
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-3x"></i>
+                    </a>
+                    <!-- dropdown user-->
+                    
+                    <ul class="dropdown-menu dropdown-user">
+                    <!-- user image section-->
+                        <div class="user-section">
+                            
+                            <div class="user-info">
+                            <div class="user-text-online">
+                                    <span class="user-circle-online btn btn-success btn-circle "></span><strong><% Response.Write("  " & Session("usr"))%></strong>
+                                </div>
+                                <div></div>
+                                
+                            </div>
+                        </div>
+                        <!--end user image section-->
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i>Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Opciones</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Salir</a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-user -->
+                </li>
+                <!-- end main dropdown -->
+            </ul>
+            <!-- end navbar-top-links -->
+
+        </nav>
+        <!-- end navbar top -->
+        
+        
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse">
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu">
+                   
+              
+                    <li  >
+                        <a href=".\inicio.aspx"><i class="fa fa-map-marker fa-fw"></i>Inicio</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-users fa-fw"></i>Perfiles Fiscales<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Mis Perfiles</a>
+                            </li>
+                            <li>
+                                <a href="">Comprar/Asignar</a>
+                            </li>
+
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+                    <li>
+                        
+                        <a href=""><i class="fa fa-clipboard fa-fw"></i>CFDi<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            
+                            <li>
+                                <a href="">Nuevo CFDi</a>
+                            </li>
+                            <li>
+                                <a href="">Comprobantes</a>
+                            </li>
+                             <li>
+                                <a href="">Timbres</a>
+                            </li>
+                             <li>
+                                <a href="">Archivos</a>
+                            </li>
+                        </ul>
+                        <!-- second-level-items -->
+                            
+                    </li>
+                   
+                    <li>
+                        <a href=""><i class="fa fa-male fa-fw"></i>Clientes<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Mis Clientes</a>
+                            </li>
+                            <li>
+                                <a href="">Reportes</a>
+                            </li>
+                         
+                       
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                    <li>
+                        <a href=""><i class="fa fa-barcode fa-fw"></i>Productos/Servicios<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Listar</a>
+                            </li>
+                          
+                             <li>
+                                <a href="">Reportes</a>
+                            </li>
+                           
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                    <li>
+                        <a href=""><i class="fa fa-bar-chart-o fa-fw"></i>Nómina<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Plantillas</a>
+                            </li>
+                            <li>
+                                <a href="">Empleados</a>
+                            </li>
+                             <li>
+                                <a href="">Reportes</a>
+                            </li>
+                         
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                   
+
+                    <li>
+                        <a href=""><i class="fa fa-gears fa-fw"></i>Configuración<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Cerfificado y Llave</a>
+                            </li>
+                            <li>
+                                <a href="">Impuestos</a>
+                            </li>
+                             <li>
+                                <a href="">Correo</a>
+                            </li>
+                             <li>
+                                <a href="">Catálogos</a>
+                            </li>
+
+                            <li>
+                                <a href="">Folios</a>
+                            </li>
+                        
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+
+                    
+                   
+                </ul>
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        
+ <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="page_container" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+
+
+    </div>
+
+
+    <!-- end wrapper -->
+    
+    
+     <!-- Core Scripts - Include with every page -->
+    <script type="text/javascript" src="/libEstilos/plugins/jquery-1.10.2.js"></script>
+    <script type="text/javascript"src="/libEstilos/plugins/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript"src="/libEstilos/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script type="text/javascript"src="/libEstilos/plugins/pace/pace.js"></script>
+    <script type="text/javascript"src="/libEstilos/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script type="text/javascript"src="/libEstilos/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script type="text/javascript"src="/libEstilos/plugins/morris/morris.js"></script>
+    <script type="text/javascript"src="/libEstilos/scripts/dashboard-demo.js"></script>
+</body>
+</html>
